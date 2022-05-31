@@ -20,9 +20,9 @@ public class Main {
      */
 public static void main(String[] args )throws IOException{
     
-Ficheros memoriav = new Ficheros("E:\escritorio\carpeta del tp 1");
-Ficheros error = new Ficheros("E:\\escritorio\\carpeta del tp 1");
-Ficheros respuesta = new Ficheros("E:\\escritorio\\carpeta del tp 1");    
+Ficheros memoriav = new Ficheros("E:\escritorio\carpeta del tp 1","");
+Ficheros error = new Ficheros("E:\\escritorio\\carpeta del tp 1","");
+Ficheros respuesta = new Ficheros("E:\\escritorio\\carpeta del tp 1",);    
 Lectura leer = new Lectura();
 Mostrar pt = new Mostrar();
 
@@ -37,5 +37,18 @@ for(int i = 0; i <=4; i++){
    
 }
 
+
+
+
+
+}
+/**
+ * 
+ */
+public void eje2(){
+  for(int i = 0; i<= 4 ; i++){
+      respuesta.guardarArchivo(String.valueOf(memoria[i] / (memoria[i + 1]- 3)));
+  
+  }
 }
 }

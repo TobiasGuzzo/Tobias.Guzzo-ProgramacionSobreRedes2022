@@ -3,6 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package chat;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,7 +18,15 @@ import java.util.logging.Logger;
 
 /**
  *
+ * ESTA PARTE VA A ESTAR EN LA HOJA HTML. Esto tamibien va a estar en el HTML,
+ * pero en la parte de la descripcion (aca puse ENTER) de la clase no como
+ * titular, y aca podemos dar una (aca puse ENTER) descripcion Gral. del uso y
+ * funcionamiento de esta CLASS.
  *
+ * @author Software-Notebook
+ * @version %I%, %G%
+ * @serial
+ * @since v1.0
  */
 public class Ficheros {
 
@@ -36,8 +46,10 @@ public class Ficheros {
             System.out.println("Existe el archivo: '" + nombre +"'");
         }
             
+        
     }
 
+//main llama a sistema y no hace nada jaja
     public void escribirArchivo() {
         Lectura lector = new Lectura();
         
@@ -81,8 +93,10 @@ public class Ficheros {
         }
         br.close();
         fr.close();
+
         return texto;
     }
+
     public void eliminarArchivo(String direc){
         File temp = new File(direc);
         temp.delete();
@@ -91,9 +105,6 @@ public class Ficheros {
         
         return true;
     }
-    
-    
-    
 }
 
 
