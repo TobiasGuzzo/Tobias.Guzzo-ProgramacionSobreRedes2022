@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.NullPointerException
+	at Socket.TCP.ClienteServidor.Servidor.prenderServer(Servidor.java:62)
+	at Socket.TCP.ClienteServidor.main_Servidor.main(main_Servidor.java:19)
